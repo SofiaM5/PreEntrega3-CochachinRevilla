@@ -95,18 +95,21 @@ main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b {
   background-color: #fff;
   display: flex;
 }
-main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b img {
+main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .Ben {
   width: 50%;
+}
+main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .Ben img {
+  width: 100%;
   height: 240px;
   margin-top: 40px;
   margin-bottom: 30px;
 }
-main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b p {
-  text-align: justify;
-}
 main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descripcion {
   margin: 50px 20px;
   width: 50%;
+}
+main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descripcion p {
+  text-align: justify;
 }
 
 /*title general*/
@@ -209,6 +212,7 @@ footer .divFooter .divFooter__copy {
   /*BENEFICIOS*/
   .indexbene {
     margin-bottom: 50px;
+    padding-right: 10px;
   }
   .indexbene .sectionBeneficios {
     height: 100%;
@@ -239,13 +243,17 @@ footer .divFooter .divFooter__copy {
     height: 50%;
   }
   .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descripcion p {
-    height: 80%;
+    font-size: 12px;
   }
-  .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .hola {
+  .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .Ben {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .hola img {
+  .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .Ben img {
     width: 100%;
+    height: 50%;
   }
 }
 .divContacto {
