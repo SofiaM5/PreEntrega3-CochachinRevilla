@@ -12,7 +12,13 @@
         align-items: center;
 
         img{
-            width: 6.25%;
+            width: 7%;
+        }
+        h3{
+            color: #C7BCA1;
+        }
+        p{
+            color:white
         }
         
     }
@@ -35,11 +41,28 @@
     
     .divContacto__b__form{
         width: 50%;
+        border-radius: 2px;
+        h3{
+            color: #65647C;
+            font-weight: bold;
+            font-size: 20px;
+        }
         
         .divContacto__b__form__a{
             display: flex;
             flex-direction: column;
-
+            label{
+                color:white
+            }
+            input{
+                background-color: gray;
+                ::placeholder{
+                    color: white;
+                }
+            }
+            textarea{
+                background-color:gray
+            }
             .divContacto__b__form__a__box{
                 width: 400px;
             }
@@ -69,7 +92,7 @@
             margin-bottom: 20px;
 
             img{
-                width: 10%;
+                width: 15%;
                 margin-bottom: 10px;
             }
         }

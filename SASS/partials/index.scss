@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial ;
 }
 
@@ -9,76 +10,71 @@
 }
 
 /*index*/
-header{
-    .divContainer__a{
+body{
+    background-color: black;
+    header{
+        background-color: black;
         width: 100%;
-        height: 120px;
-        background-color: #fff;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-        .divContainer__a__redes{
-            background-color: #fff;
-            height: 40px;
-
-            img{
-                width: 20px;
-                margin: 10px;
-            }
-        }
-
-        
-        
-        .divContainer__a__logo{
-            background-color: #fff;
-            color:   #456134;
-            height: 40px;
-
-            img{
-                width:50px;
-                align-content: center;
-            }
-        }
-        .divContainer__a__login{
-            background-color: #fff;
-            height: 40px;
-
-            img{
-                width: 25px;
-                margin: 10px;
-            }
-        }
-    }
-}
-
-nav{
-    .m{
-        padding: 0;
-        margin: 0;
-
-        .colornav{
-            background-color: rgb(60, 56, 56);
-
-            .letra{
-                width: 500px;
-                height: 100%;
-                justify-content: space-around;
-                display: flex;
-                align-items: center;
-                margin: auto;
-
-                #mcolor{
-                    color:white;
-                }
-                #mcolor:hover{
-                    color: #456134;
+        .divContainer__a{
+            width: 100%;
+            height: 120px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .divContainer__a__e{
+                img{
+                    width: 70px;
                 }
             }
+            .divContainer__a__logo{
+                h1{
+                    color: white;
+                    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 40px #B1AFFF , 0 0 70px #B1AFFF ;
+                
+                    /*text-shadow: 0 0 5px #3366a4;*/
+                    height: 40px;
+                }
+            }
+            .divContainer__a__login{
+                img{
+                    display: flex;
+                    justify-content: flex-end;
+                    
+                }
+            }  
         }
+
+        nav{
+            background-color: black; 
+            border-top: 1px solid grey;
+            border-bottom:1px solid grey ;
+            .m{
+                padding: 0;
+                margin: 0;
+                
+                .colornav{
+                    
+                    .letra{
+                        width: 100%;
+                        height: 100%;
+                        justify-content: space-around;
+                        display: flex;
+                        align-items: center;
+                        margin: auto;
+                        font-style:inherit;  
+                        #mcolor{
+                            color:white;
+                        }
+                        #mcolor:hover{
+                                color: #8699B1;
+                        }
+                    }
+                }
+            }
+
+        } 
     }
 }
-
 .carousel{
     .tamanioCarousel{
         height: 90vh;
@@ -88,38 +84,38 @@ nav{
 
 main{
     .sectionBeneficios{
-        background-color: #fff;
+
         margin-top: 50px;
         margin-bottom: 50PX;
         margin-left: 15px;
         margin-right: 15px;
 
         .sectionBeneficios__ab__a{
-            background-color: #fff;
             margin-bottom: 10px;
 
             h2{
                 font-weight: bold;
                 margin-left: 20px;
+                color: #344D67;
             }
         }
 
         .sectionBeneficios__ab{
             width: 100%;
             height: 325px;
-            background-color:#fff;
             display: flex;
 
             .sectionBeneficios__ab__b{
-                background-color: #fff;
                 display: flex;
 
                 .Ben{
                     width: 50%;
+                    display: flex;
+                    justify-content: center;
                     
                     img{
-                    width: 100%;
-                    height: 240px;
+                    width: 50%;
+                    height: 180px;
                     margin-top: 40px;
                     margin-bottom: 30px;
                     }
@@ -130,9 +126,14 @@ main{
                 .descripcion{
                     margin: 50px 20px ;
                     width: 50%;
+                    h3{
+                        color: white;
+                        font-weight: bold;
+                    }
 
                     p{
                         text-align: justify;
+                        color: white;
                     }
                 }
             }
@@ -147,15 +148,13 @@ main{
 footer{
 
     .divFooter{
-        background-color: #456134;
+        background-color: #C7BCA1;
         width: 100%;
         height: 100%;
         display: flex;
         padding-top: 20px;
         align-items: center;
         flex-direction: column;
-        background-image: linear-gradient(0, #5f7439 0, #526b37 25%, #456134 50%, #395731 75%, #2f4e2e 100%);
-        
         .divFooter__redes{
             width: 100%;
             height: 100%;
@@ -177,6 +176,9 @@ footer{
         .divFooter__copy{
             font-size: 15px;
             margin-top: 20px;
+            p{
+                font-weight: bold;
+            }
             
             
         }
@@ -194,15 +196,14 @@ footer{
 }
 
 .divFooter{
-    background-color: #456134;
+    background-color: #8699B1;
     width: 100%;
     height: 100%;
     display: flex;
     padding-top: 20px;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(0, #5f7439 0, #526b37 25%, #456134 50%, #395731 75%, #2f4e2e 100%);
-
+    
     .divFooter__redes{
         width: 100%;
         height: 100%;
@@ -241,21 +242,17 @@ footer{
 
     
     .colornav{
-        margin: 20px 10px;
-        background-color: #456134;
-        border-radius: 15px;
-        padding: 20px;
-    }
-
-    .k{
-        margin-top: 15px;
-    }
-
-    .letra{
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: 20px 10px;
+        background-color: #8699B1;
+        border-radius: 50px;
+        padding: 30px;
+        .letra{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     /*INDEX*/
@@ -265,9 +262,6 @@ footer{
     }
     /*BENEFICIOS*/
     .indexbene{
-        margin-bottom: 50px;
-        padding-right: 10px;
-
         .sectionBeneficios{
             height: 100%;
             display: flex;
@@ -277,11 +271,12 @@ footer{
                 height: 20%;
                 display: flex;
                 justify-content: center;
+                margin-top: 15px;
                 h2{
                     font-size: 40px;
+                    color: #8699B1;
                 }
             }
-    
             .sectionBeneficios__ab{
                 
                 height: 600px;
@@ -293,13 +288,7 @@ footer{
                     height: 50%;
                     display: flex;
                     flex-direction: row;
-                    .descripcion{
-                        width: 50%;
-                        height: 50%;
-                        p{
-                            font-size: 12px;
-                        }
-                    }
+                    background-color: black;
                     .Ben{
                         width: 50%;
                         display: flex;
@@ -309,9 +298,21 @@ footer{
                         img{
                             width: 100%;
                             height: 50%;
+                            margin-left: 15px;
                         }
                     }
-
+                    .descripcion{
+                        width: 50%;
+                        height: 50%;
+                        h3{
+                            font-weight: bold;
+                            color: white;
+                        }
+                        p{
+                            font-size: 13px;
+                            color: white;
+                        }
+                    }
                 }
                     
             }

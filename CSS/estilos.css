@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: Arial;
 }
 
@@ -9,60 +10,56 @@
 }
 
 /*index*/
-header .divContainer__a {
+body {
+  background-color: black;
+}
+body header {
+  background-color: black;
+  width: 100%;
+}
+body header .divContainer__a {
   width: 100%;
   height: 120px;
-  background-color: #fff;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-header .divContainer__a .divContainer__a__redes {
-  background-color: #fff;
+body header .divContainer__a .divContainer__a__e img {
+  width: 70px;
+}
+body header .divContainer__a .divContainer__a__logo h1 {
+  color: white;
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 40px #B1AFFF, 0 0 70px #B1AFFF;
+  /*text-shadow: 0 0 5px #3366a4;*/
   height: 40px;
 }
-header .divContainer__a .divContainer__a__redes img {
-  width: 20px;
-  margin: 10px;
+body header .divContainer__a .divContainer__a__login img {
+  display: flex;
+  justify-content: flex-end;
 }
-header .divContainer__a .divContainer__a__logo {
-  background-color: #fff;
-  color: #456134;
-  height: 40px;
+body header nav {
+  background-color: black;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
-header .divContainer__a .divContainer__a__logo img {
-  width: 50px;
-  align-content: center;
-}
-header .divContainer__a .divContainer__a__login {
-  background-color: #fff;
-  height: 40px;
-}
-header .divContainer__a .divContainer__a__login img {
-  width: 25px;
-  margin: 10px;
-}
-
-nav .m {
+body header nav .m {
   padding: 0;
   margin: 0;
 }
-nav .m .colornav {
-  background-color: rgb(60, 56, 56);
-}
-nav .m .colornav .letra {
-  width: 500px;
+body header nav .m .colornav .letra {
+  width: 100%;
   height: 100%;
   justify-content: space-around;
   display: flex;
   align-items: center;
   margin: auto;
+  font-style: inherit;
 }
-nav .m .colornav .letra #mcolor {
+body header nav .m .colornav .letra #mcolor {
   color: white;
 }
-nav .m .colornav .letra #mcolor:hover {
-  color: #456134;
+body header nav .m .colornav .letra #mcolor:hover {
+  color: #8699B1;
 }
 
 .carousel .tamanioCarousel {
@@ -71,36 +68,35 @@ nav .m .colornav .letra #mcolor:hover {
 }
 
 main .sectionBeneficios {
-  background-color: #fff;
   margin-top: 50px;
   margin-bottom: 50PX;
   margin-left: 15px;
   margin-right: 15px;
 }
 main .sectionBeneficios .sectionBeneficios__ab__a {
-  background-color: #fff;
   margin-bottom: 10px;
 }
 main .sectionBeneficios .sectionBeneficios__ab__a h2 {
   font-weight: bold;
   margin-left: 20px;
+  color: #344D67;
 }
 main .sectionBeneficios .sectionBeneficios__ab {
   width: 100%;
   height: 325px;
-  background-color: #fff;
   display: flex;
 }
 main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b {
-  background-color: #fff;
   display: flex;
 }
 main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .Ben {
   width: 50%;
+  display: flex;
+  justify-content: center;
 }
 main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .Ben img {
-  width: 100%;
-  height: 240px;
+  width: 50%;
+  height: 180px;
   margin-top: 40px;
   margin-bottom: 30px;
 }
@@ -108,21 +104,25 @@ main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descri
   margin: 50px 20px;
   width: 50%;
 }
+main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descripcion h3 {
+  color: white;
+  font-weight: bold;
+}
 main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descripcion p {
   text-align: justify;
+  color: white;
 }
 
 /*title general*/
 /*footer*/
 footer .divFooter {
-  background-color: #456134;
+  background-color: #C7BCA1;
   width: 100%;
   height: 100%;
   display: flex;
   padding-top: 20px;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(0, #5f7439 0, #526b37 25%, #456134 50%, #395731 75%, #2f4e2e 100%);
 }
 footer .divFooter .divFooter__redes {
   width: 100%;
@@ -143,6 +143,9 @@ footer .divFooter .divFooter__copy {
   font-size: 15px;
   margin-top: 20px;
 }
+footer .divFooter .divFooter__copy p {
+  font-weight: bold;
+}
 
 /*footer*/
 .ssa {
@@ -154,14 +157,13 @@ footer .divFooter .divFooter__copy {
 }
 
 .divFooter {
-  background-color: #456134;
+  background-color: #8699B1;
   width: 100%;
   height: 100%;
   display: flex;
   padding-top: 20px;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(0, #5f7439 0, #526b37 25%, #456134 50%, #395731 75%, #2f4e2e 100%);
 }
 .divFooter .divFooter__redes {
   width: 100%;
@@ -190,15 +192,13 @@ footer .divFooter .divFooter__copy {
 @media (max-width: 930px) {
   /*NAV GENERAL*/
   .colornav {
+    width: 100%;
     margin: 20px 10px;
-    background-color: #456134;
-    border-radius: 15px;
-    padding: 20px;
+    background-color: #8699B1;
+    border-radius: 50px;
+    padding: 30px;
   }
-  .k {
-    margin-top: 15px;
-  }
-  .letra {
+  .colornav .letra {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -210,10 +210,6 @@ footer .divFooter .divFooter__copy {
     height: 50vh;
   }
   /*BENEFICIOS*/
-  .indexbene {
-    margin-bottom: 50px;
-    padding-right: 10px;
-  }
   .indexbene .sectionBeneficios {
     height: 100%;
     display: flex;
@@ -223,9 +219,11 @@ footer .divFooter .divFooter__copy {
     height: 20%;
     display: flex;
     justify-content: center;
+    margin-top: 15px;
   }
   .indexbene .sectionBeneficios .sectionBeneficios__ab__a h2 {
     font-size: 40px;
+    color: #8699B1;
   }
   .indexbene .sectionBeneficios .sectionBeneficios__ab {
     height: 600px;
@@ -237,13 +235,7 @@ footer .divFooter .divFooter__copy {
     height: 50%;
     display: flex;
     flex-direction: row;
-  }
-  .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descripcion {
-    width: 50%;
-    height: 50%;
-  }
-  .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descripcion p {
-    font-size: 12px;
+    background-color: black;
   }
   .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .Ben {
     width: 50%;
@@ -254,6 +246,19 @@ footer .divFooter .divFooter__copy {
   .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .Ben img {
     width: 100%;
     height: 50%;
+    margin-left: 15px;
+  }
+  .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descripcion {
+    width: 50%;
+    height: 50%;
+  }
+  .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descripcion h3 {
+    font-weight: bold;
+    color: white;
+  }
+  .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descripcion p {
+    font-size: 13px;
+    color: white;
   }
 }
 .divContacto {
@@ -269,7 +274,13 @@ footer .divFooter .divFooter__copy {
   align-items: center;
 }
 .divContacto .divContacto__a img {
-  width: 6.25%;
+  width: 7%;
+}
+.divContacto .divContacto__a h3 {
+  color: #C7BCA1;
+}
+.divContacto .divContacto__a p {
+  color: white;
 }
 
 .divContacto__b {
@@ -285,10 +296,28 @@ footer .divFooter .divFooter__copy {
 }
 .divContacto__b .divContacto__b__form {
   width: 50%;
+  border-radius: 2px;
+}
+.divContacto__b .divContacto__b__form h3 {
+  color: #65647C;
+  font-weight: bold;
+  font-size: 20px;
 }
 .divContacto__b .divContacto__b__form .divContacto__b__form__a {
   display: flex;
   flex-direction: column;
+}
+.divContacto__b .divContacto__b__form .divContacto__b__form__a label {
+  color: white;
+}
+.divContacto__b .divContacto__b__form .divContacto__b__form__a input {
+  background-color: gray;
+}
+.divContacto__b .divContacto__b__form .divContacto__b__form__a input ::placeholder {
+  color: white;
+}
+.divContacto__b .divContacto__b__form .divContacto__b__form__a textarea {
+  background-color: gray;
 }
 .divContacto__b .divContacto__b__form .divContacto__b__form__a .divContacto__b__form__a__box {
   width: 400px;
@@ -311,7 +340,7 @@ footer .divFooter .divFooter__copy {
     margin-bottom: 20px;
   }
   .divContacto .divContacto__a img {
-    width: 10%;
+    width: 15%;
     margin-bottom: 10px;
   }
   .divContacto__b {
@@ -367,9 +396,9 @@ main .divtitle {
 main .divtitle h2 {
   height: 100%;
   font-weight: bold;
+  color: white;
 }
-
-.divServicios__x {
+main .divServicios__x {
   width: 100%;
   height: 50%;
   display: flex;
@@ -379,18 +408,23 @@ main .divtitle h2 {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-.divServicios__x .divServicios__x__caja {
+main .divServicios__x .divServicios__x__caja {
   width: 30%;
   height: 100%;
 }
-.divServicios__x .divServicios__x__caja p {
-  width: 100%;
-  height: 100%;
-}
-.divServicios__x .divServicios__x__caja img {
+main .divServicios__x .divServicios__x__caja img {
   width: 400px;
 }
-.divServicios__x .desc {
+main .divServicios__x .divServicios__x__caja h3 {
+  font-weight: bold;
+  color: white;
+}
+main .divServicios__x .divServicios__x__caja p {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+main .divServicios__x .desc {
   width: 50%;
   height: 100%;
   display: flex;
@@ -447,6 +481,7 @@ main .divtitle h2 {
 .divNosotros .divNosotros__c p {
   width: 100%;
   height: 100%;
+  color: white;
 }
 .divNosotros .divNosotros__c img {
   width: 400px;
