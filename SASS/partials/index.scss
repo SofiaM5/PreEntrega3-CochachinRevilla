@@ -29,7 +29,7 @@ body{
             .divContainer__a__logo{
                 h1{
                     color: white;
-                    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 40px #B1AFFF , 0 0 70px #B1AFFF ;
+                    text-shadow: 0 0 5px rgba(255,255,255,1) , 0 0 40px #B1AFFF  ;
                 
                     /*text-shadow: 0 0 5px #3366a4;*/
                     height: 40px;
@@ -141,14 +141,11 @@ main{
         
     }
 }
-
-/*title general*/
-
 /*footer*/
 footer{
 
     .divFooter{
-        background-color: #C7BCA1;
+        background-color: #8699B1;
         width: 100%;
         height: 100%;
         display: flex;
@@ -240,7 +237,9 @@ footer{
 @media (max-width:930px) {
     /*NAV GENERAL*/
 
-    
+    .button{
+        background-color: #8699B1;
+    }
     .colornav{
         width: 100%;
         margin: 20px 10px;

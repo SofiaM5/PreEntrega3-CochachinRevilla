@@ -29,7 +29,7 @@ body header .divContainer__a .divContainer__a__e img {
 }
 body header .divContainer__a .divContainer__a__logo h1 {
   color: white;
-  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 40px #B1AFFF, 0 0 70px #B1AFFF;
+  text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 40px #B1AFFF;
   /*text-shadow: 0 0 5px #3366a4;*/
   height: 40px;
 }
@@ -113,10 +113,9 @@ main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descri
   color: white;
 }
 
-/*title general*/
 /*footer*/
 footer .divFooter {
-  background-color: #C7BCA1;
+  background-color: #8699B1;
   width: 100%;
   height: 100%;
   display: flex;
@@ -191,6 +190,9 @@ footer .divFooter .divFooter__copy p {
 
 @media (max-width: 930px) {
   /*NAV GENERAL*/
+  .button {
+    background-color: #8699B1;
+  }
   .colornav {
     width: 100%;
     margin: 20px 10px;
