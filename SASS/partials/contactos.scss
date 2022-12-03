@@ -55,19 +55,20 @@
                 color:white
             }
             input{
-                background-color: gray;
+                background-color: rgb(238, 234, 234);
                 ::placeholder{
                     color: white;
                 }
             }
             textarea{
-                background-color:gray
+                background-color:rgb(238, 234, 234)
             }
             .divContacto__b__form__a__box{
                 width: 400px;
             }
 
             .divContacto__b__form__a__btn{
+                margin-top: 15px;
                 width: 100px;
             }
 
