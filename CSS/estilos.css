@@ -94,6 +94,7 @@ main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .Ben im
   height: 220px;
   margin-top: 40px;
   margin-bottom: 30px;
+  border-radius: 8px;
 }
 main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descripcion {
   margin: 50px 20px;
@@ -293,23 +294,32 @@ footer .divFooter .divFooter__copy p {
   display: flex;
   flex-direction: row;
   margin-top: 50px;
-  padding: 0px 200px;
+  margin-bottom: 40px;
 }
 .divContacto__b .divContacto__b__map {
-  width: 100%;
-  margin-bottom: 40px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.divContacto__b .divContacto__b__map iframe {
+  width: 430px;
 }
 .divContacto__b .divContacto__b__form {
   width: 50%;
   border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .divContacto__b .divContacto__b__form h3 {
   color: #65647C;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 .divContacto__b .divContacto__b__form .divContacto__b__form__a {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .divContacto__b .divContacto__b__form .divContacto__b__form__a label {
