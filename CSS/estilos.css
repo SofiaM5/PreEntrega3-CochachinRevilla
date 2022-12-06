@@ -430,6 +430,7 @@ main .divServicios__x .divServicios__x__caja {
 }
 main .divServicios__x .divServicios__x__caja img {
   width: 400px;
+  border-radius: 8px;
 }
 main .divServicios__x .divServicios__x__caja h3 {
   font-weight: bold;
@@ -469,12 +470,13 @@ main .divServicios__x .desc {
     align-items: center;
     margin-bottom: 20px;
   }
-  .divServicios .divServicios__x .divServicios__x__caja p {
-    width: 100%;
-  }
-  .divServicios .divServicios__x .divServicios__x__caja .divServicios__x__caja__img {
-    width: 100%;
+  .divServicios .divServicios__x .divServicios__x__caja img {
+    width: 350px;
     padding: 0px 0px;
+  }
+  .divServicios .divServicios__x .divServicios__x__caja p {
+    width: 310px;
+    font-size: 12px;
   }
 }
 .mainNosotros {
