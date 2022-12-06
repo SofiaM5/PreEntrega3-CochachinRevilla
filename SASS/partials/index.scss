@@ -108,8 +108,8 @@ main{
                     justify-content: center;
                     
                     img{
-                    width: 50%;
-                    height: 180px;
+                    width:200px;
+                    height: 220px;
                     margin-top: 40px;
                     margin-bottom: 30px;
                     }
@@ -126,6 +126,7 @@ main{
                     }
 
                     p{
+                        font-size: 15px;
                         text-align: justify;
                         color: white;
                     }
@@ -228,7 +229,7 @@ footer{
 
 
 
-@media (max-width:930px) {
+@media (max-width:750px) {
     /*NAV GENERAL*/
 
     .button{
@@ -282,28 +283,38 @@ footer{
                     display: flex;
                     flex-direction: row;
                     background-color: black;
+                    justify-content: center;
+                    align-items: center;
+
                     .Ben{
                         width: 50%;
                         display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        
 
                         img{
-                            width: 100%;
-                            height: 50%;
-                            margin-left: 15px;
+                            width:200px;
+                            height: 220px;
+                            display: flex;
+                           
                         }
                     }
                     .descripcion{
                         width: 50%;
                         height: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                         h3{
+                            font-size: 18px;
                             font-weight: bold;
                             color: white;
                         }
                         p{
                             font-size: 13px;
                             color: white;
+                            height: 100%;
+                            text-align: justify;
                         }
                     }
                 }

@@ -90,8 +90,8 @@ main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .Ben {
   justify-content: center;
 }
 main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .Ben img {
-  width: 50%;
-  height: 180px;
+  width: 200px;
+  height: 220px;
   margin-top: 40px;
   margin-bottom: 30px;
 }
@@ -104,6 +104,7 @@ main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descri
   font-weight: bold;
 }
 main .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descripcion p {
+  font-size: 15px;
   text-align: justify;
   color: white;
 }
@@ -183,7 +184,7 @@ footer .divFooter .divFooter__copy p {
   margin-top: 20px;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 750px) {
   /*NAV GENERAL*/
   .button {
     background-color: #8699B1;
@@ -233,29 +234,36 @@ footer .divFooter .divFooter__copy p {
     display: flex;
     flex-direction: row;
     background-color: black;
+    justify-content: center;
+    align-items: center;
   }
   .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .Ben {
     width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .Ben img {
-    width: 100%;
-    height: 50%;
-    margin-left: 15px;
+    width: 200px;
+    height: 220px;
+    display: flex;
   }
   .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descripcion {
     width: 50%;
     height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descripcion h3 {
+    font-size: 18px;
     font-weight: bold;
     color: white;
   }
   .indexbene .sectionBeneficios .sectionBeneficios__ab .sectionBeneficios__ab__b .descripcion p {
     font-size: 13px;
     color: white;
+    height: 100%;
+    text-align: justify;
   }
 }
 .divContacto {
@@ -459,60 +467,69 @@ main .divServicios__x .desc {
   }
 }
 .mainNosotros {
-  margin-bottom: 75px;
-}
-
-.divNosotros {
   width: 100%;
-  height: 50%;
+  height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+}
+.mainNosotros .divtitle {
+  width: 100%;
+}
+.mainNosotros .divN {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
   margin-top: 20px;
 }
-.divNosotros .divNosotros__c {
-  width: 30%;
-  height: 100%;
+.mainNosotros .divN .divN__img {
+  width: 40%;
+  margin-bottom: 20px;
 }
-.divNosotros .divNosotros__c p {
+.mainNosotros .divN .divN__img img {
   width: 100%;
-  height: 100%;
-  color: white;
-  font-size: 14px;
 }
-.divNosotros .divNosotros__c img {
-  width: 400px;
+.mainNosotros .divN .divN__p {
+  width: 40%;
+}
+.mainNosotros .divN .divN__p p {
+  width: 100%;
+  color: white;
+  text-align: justify;
 }
 
 @media (max-width: 736px) {
+  .mainNosotros {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainNosotros .divtitle {
+    width: 100%;
+  }
   .mainNosotros .divN {
     width: 100%;
-    padding: 0px 0px;
-  }
-  .mainNosotros .divN .divNosotros {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 0px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
-  .mainNosotros .divN .divNosotros .divNosotros__c {
-    width: 100%;
-    padding: 0px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .mainNosotros .divN .divN__img {
+    width: 80%;
     margin-bottom: 20px;
   }
-  .mainNosotros .divN .divNosotros .divNosotros__c p {
+  .mainNosotros .divN .divN__img img {
     width: 100%;
   }
-  .mainNosotros .divN .divNosotros .divNosotros__c img {
+  .mainNosotros .divN .divN__p {
+    width: 80%;
+  }
+  .mainNosotros .divN .divN__p p {
+    font-size: 14px;
     width: 100%;
-    padding: 0px 0px;
+    color: white;
+    text-align: justify;
   }
 }
 * {
