@@ -496,14 +496,17 @@ main .divServicios__x .desc {
   margin-top: 20px;
 }
 .mainNosotros .divN .divN__img {
-  width: 40%;
+  width: 30%;
+  height: 50%;
   margin-bottom: 20px;
 }
 .mainNosotros .divN .divN__img img {
   width: 100%;
+  border-radius: 10px;
 }
 .mainNosotros .divN .divN__p {
-  width: 40%;
+  width: 30%;
+  height: 50%;
 }
 .mainNosotros .divN .divN__p p {
   width: 100%;
